@@ -31,3 +31,16 @@ namespace ImmortalIdle.Core
         }
     }
 }
+private SystemManager systemManager;
+
+private void Initialize()
+{
+    systemManager = new SystemManager();
+
+    systemManager.Initialize();
+}
+
+private void Update()
+{
+    systemManager.Update();
+}
